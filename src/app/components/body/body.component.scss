@@ -1,0 +1,10 @@
+.bodyComponent {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
