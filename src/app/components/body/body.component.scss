@@ -1,10 +1,27 @@
 .bodyComponent {
-	width: 500px;
-	height: 500px;
-	border: 1px solid black;
+	width: 100vw;
+	height: 100vh;
 
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
+
+	color: #333333;
+
+	.headline {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		font-size: 1.5rem;
+	}
+
+	.lightText {
+		color: #ffffff;
+	}
+
+	form {
+		display: flex;
+		flex-flow: column nowrap;
+	}
 }

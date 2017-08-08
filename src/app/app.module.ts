@@ -5,15 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BodyComponent } from './components/body/body.component';
-import { HexComponent } from './components/hex/hex.component';
-import { RgbaComponent } from './components/rgba/rgba.component';
+import { HexComponent } from './components/hex-component/hex.component';
+import { RgbComponentComponent } from './components/rgb-component/rgb-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
     HexComponent,
-    RgbaComponent
+    RgbComponentComponent
   ],
   imports: [
     BrowserModule,

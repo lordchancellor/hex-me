@@ -1,3 +1,16 @@
-<div class="bodyComponent">
-  <hm-hex></hm-hex>
+<div class="bodyComponent" [ngStyle]="{ 'background': background, 'color': textColour }">
+  <h1 class="headline">Hex Me</h1>
+  
+  <form>
+    <hm-hex 
+      (rgbCode)="changeBackground($event, 'rgb')" 
+      (useLightText)="useLightText($event)"
+      [background]="background"
+      [textColour]="textColour"></hm-hex>
+    <hm-rgb 
+      (hexCode)="changeBackground($event, 'hex')"
+      (useLightText)="useLightText($event)" 
+      [background]="background"
+      [textColour]="textColour"></hm-rgb>
+  </form>
 </div>
