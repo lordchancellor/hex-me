@@ -1,0 +1,6 @@
+<input type="text" 
+       #hexCode 
+       [maxLength]="maxLength"
+       (input)="valueChanged(hexCode.value)"
+       [placeholder]="placeholder"
+       [ngStyle]="{ 'background': background, 'color': textColour }">
