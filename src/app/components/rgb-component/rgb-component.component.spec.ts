@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RgbaComponent } from './rgba.component';
+import { RgbComponentComponent } from './rgb-component.component';
 
-describe('RgbaComponent', () => {
-  let component: RgbaComponent;
-  let fixture: ComponentFixture<RgbaComponent>;
+describe('RgbComponentComponent', () => {
+  let component: RgbComponentComponent;
+  let fixture: ComponentFixture<RgbComponentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RgbaComponent ]
+      declarations: [ RgbComponentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RgbaComponent);
+    fixture = TestBed.createComponent(RgbComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

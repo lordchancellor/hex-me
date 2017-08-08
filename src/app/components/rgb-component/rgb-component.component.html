@@ -1,0 +1,27 @@
+<div class="flex-container">
+  <input type="number"
+         class="no-spin"
+         placeholder="rgb"
+         #redCode
+         maxlength="3"
+         [ngStyle]="{ 'background': background, 'color': textColour }"
+         (input)="valueChanged(redCode.value, 'red')">
+  
+        <span class="comma" *ngIf="redCode.value">,</span>
+  
+  <input type="number"
+         class="no-spin"
+         #greenCode
+         maxlength="3"
+         [ngStyle]="{ 'background': background, 'color': textColour }"
+         (input)="valueChanged(greenCode.value, 'green')">
+  
+        <span class="comma" *ngIf="greenCode.value">,</span>
+  
+  <input type="number"
+         class="no-spin"
+         #blueCode
+         maxlength="3"
+         [ngStyle]="{ 'background': background, 'color': textColour }"
+         (input)="valueChanged(blueCode.value, 'blue')">
+</div>
